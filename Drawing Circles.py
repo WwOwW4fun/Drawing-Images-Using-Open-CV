@@ -9,7 +9,7 @@ import numpy as np
 def draw(event,x,y,flags,param):
     if event == cv2.EVENT_LBUTTONDOWN:
         cv2.circle(pic,(x,y),40,(200,200,0),-1)
-    elif(event == cv2.EVENT_RBUTTONDOWN):
+    elif event == cv2.EVENT_RBUTTONDOWN :
         cv2.circle(pic,(x,y),40,(0,200,200),-1)
 cv2.namedWindow(winname = 'Draw')
 
